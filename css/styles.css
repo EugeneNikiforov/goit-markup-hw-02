@@ -1,9 +1,9 @@
-:root {
-    --background-color: #FFF;
+:root {    
     --background-footer: #2F303A;
     --letter-color: #212121;
     --primary-color: #757575;   
     --selection-color: #2196F3;
+    --white-color: #FFF;
 }
 body {    
     font-family: 'Roboto', 'Raleway', sans-serif;
@@ -11,12 +11,14 @@ body {
     width: 1600px;
     margin: 0 auto;
 }
+
 /* header */
 .header {    
-    background-color: var(--background-color);
+    background-color: var(--white-color);
 }
+
 /* logo */
-.header-logo {
+.web-logo {
     --black-text-color: #000;
     --logo-text-color: #2196F3;
     font-family: 'Raleway';    
@@ -25,21 +27,18 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     width: 145px;
-    color: var(--black-text-color);
+    color: var(--logo-text-color);
     text-decoration: none;    
 }
-.logo-header {
-    color: var(--logo-text-color);
+.studio-logo {
+    color: var(--black-text-color);
 }
+
 /* header_navigation */
-.header-list .header-item:hover, .header-list .header-item:focus {
-    color: var(--selection-color);
+.list-item {
+    list-style: none;
 }
-.header-list 
-.header-list-item {
-    display: inline-block;
-}
-.header-item {      
+.navi-item {      
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -47,8 +46,13 @@ body {
     color: var(--letter-color);
     text-decoration: none;
 }
+.navi-item:hover, 
+.navi-item:focus {
+    color: var(--selection-color);
+} 
+
 /* header_contacts */
-.header-mail {    
+.contact-link {    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -56,17 +60,10 @@ body {
     color: var(--primary-color);
     text-decoration: none;
 }
-.header-tel {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--primary-color);
-    text-decoration: none;
-}
-.header-mail:hover, .header-mail:focus, .header-tel:hover, .header-tel:focus {
+.contact-link:hover, .contact-link:focus {
     color: var(--selection-color);
 }
+
 /* main_content */
 .main {
     background-color: var(--background-footer);
@@ -78,9 +75,10 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--background-color);
+    color: var(--white-color);
 }
 .button {
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -90,15 +88,15 @@ body {
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    color: var(--background-color);
+    color: var(--white-color);
     background-color: var(--selection-color);
     cursor: pointer;
 }
+
 /* description */
-.section-features {
-    background-color: var(--background-color);
-}
-.features 
+.section {
+    background-color: var(--white-color);
+} 
 .title {
     font-weight: 700;
     font-size: 14px;
@@ -120,7 +118,85 @@ body {
     letter-spacing: 0.03em;
     color: var(--letter-color);
 }
+
 /* crew */
 .section-crew {
     background-color: #F5F4FA;
+}
+.title-crew {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--letter-color);
+}
+.crew-list p {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* contacts */
+.footer {
+    background-color: var(--background-footer);
+}
+.footer-logo {
+    color: var(--white-color);
+}
+.adress-list {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+.adress-place {
+    color: var(--white-color);
+}
+.adress-list:hover, 
+.adress-list:focus, 
+.adress-place:hover, 
+.adress-place:focus {
+    color: var(--selection-color);
+}
+
+/* portfolio */
+
+/* button list */
+.menu-button {
+    font-family: 'Roboto', sans-serif;        
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    color: var(--letter-color);
+    background-color: #F5F4FA;
+    cursor: pointer;
+}
+.menu-button:hover, .menu-button:focus {
+    background-color: var(--selection-color);    
+    color: var(--white-color);
+}
+
+/* project list */
+.project-title {    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--letter-color);
+}
+.project-list p {    
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
+}
+.project-link {
+    text-decoration: none;
 }
