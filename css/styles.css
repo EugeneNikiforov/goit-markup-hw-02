@@ -6,7 +6,7 @@
     --white-color: #FFF;
 }
 body {    
-    font-family: 'Roboto', 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: var(--primary-color);
     width: 1600px;
     margin: 0 auto;
@@ -48,6 +48,9 @@ body {
 }
 .navi-item:hover, 
 .navi-item:focus {
+    color: var(--selection-color);
+}
+.navi-page {
     color: var(--selection-color);
 } 
 
